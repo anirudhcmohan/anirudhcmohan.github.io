@@ -87,6 +87,10 @@
     color: #C4C4C4;
 }
 
+.my-images-preview {
+    width: 350px;
+}
+
 .body-text {
     position: absolute;
     width: 350px;
