@@ -31,30 +31,26 @@
     color: #000000;
 }
 
-.writing-title {
+.writing-header {
     position: absolute;
     width: 350px;
     left: calc(50% - 350px/2);
     top: 100px;
     margin-bottom: 0;
     margin-top: 0;    
+}
 
+.writing-title {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-
+    font-size: 40px;
 
     color: #000000;
 }
 
-.writing-date-title {
-    position: absolute;
-    width: 350px;
-    left: calc(50% - 350px/2);
-    top: 180px;
-    margin-bottom: 0;
-    margin-top: 0;
+.writing-date {
+    /* margin-top: 10px; */
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -62,6 +58,27 @@
     font-size: 14px;
 
     color: #C4C4C4;
+}
+
+.writing-body-text {  
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.writing-section-lead {
+    font-size: 24px;
+}
+
+.writing-images-preview {
+    width: 350px;
+}
+
+.writing-caption {
+    font-style: italic;
 }
 
 #pic-div {
@@ -103,22 +120,6 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
-
-    color: #000000;
-}
-
-.writing-text {
-    position: absolute;
-    width: 350px;
-    left: calc(50% - 350px/2);
-    top: 214px;
-    margin-top: 0;
-    margin-bottom: 0px;    
-
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
 
     color: #000000;
 }
