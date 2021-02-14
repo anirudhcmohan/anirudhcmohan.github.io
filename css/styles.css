@@ -58,6 +58,10 @@
     color: #C4C4C4;
 }
 
+#writing-body-text-long-title {
+    top: 260px;
+}
+
 #writing-body-text-medium-title {
     top: 220px;
 }
@@ -89,8 +93,14 @@
 }
 
 .writing-section-lead {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.writing-section-sublead {
     font-size: 24px;
     font-weight: normal;
+    color: #585858;
 }
 
 .writing-images-preview {
