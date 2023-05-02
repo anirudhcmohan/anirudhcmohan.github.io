@@ -16,13 +16,11 @@ body {
 }
 
 h1 {
-  font-weight: 700;
   font-size: 3em;
-  /* Increased font size */
   margin-bottom: 20px;
 }
 
-h3 {
+h3, h2 {
   font-weight: 700;
   margin-bottom: 10px;
 }
