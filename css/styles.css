@@ -60,7 +60,6 @@ a:hover {
   }
 }
 
-.hero {max-width:720px;margin:12vh auto;text-align:center;padding:0 1rem;}
 .hero-img{width:160px;border-radius:50%;margin:0 auto 1.5rem;display:block;}
 .hero h1 {font-size:clamp(2.2rem,5vw,3rem);line-height:1.2;font-weight:700;}
 .hero p {font-size:1.125rem;margin:1rem 0 2rem;}
