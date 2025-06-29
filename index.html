@@ -3,30 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ani Mohan – Building AI products that turn everyone into a creator</title>
+  <title>Ani Mohan – Building AI that gives everyone superpowers</title>
   <meta name="author" content="Ani Mohan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ani Mohan is a product leader at Google Labs building NotebookLM and agentic AI content systems. Founder of GameSnacks, angel investor in consumer-AI.">
-  <meta property="og:title" content="Building AI products that turn everyone into a creator">
-  <meta property="og:description" content="Hi, I'm Ani Mohan, product leader at Google Labs working on NotebookLM. I build tools that amplify human creativity.">
+  <meta property="og:title" content="Building AI that gives everyone superpowers">
+  <meta property="og:description" content="Hi, I'm Ani Mohan, product leader at Google Labs creating NotebookLM and agentic content systems that amplify human potential.">
   <meta property="og:image" content="https://animohan.me/images/me.png">
   <meta property="og:url" content="https://animohan.me">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building AI products that turn everyone into a creator">
-  <meta name="twitter:description" content="Hi, I'm Ani Mohan, product leader at Google Labs working on NotebookLM. I build tools that amplify human creativity.">
+  <meta name="twitter:title" content="Building AI that gives everyone superpowers">
+  <meta name="twitter:description" content="Hi, I'm Ani Mohan, product leader at Google Labs creating NotebookLM and agentic content systems that amplify human potential.">
   <meta name="twitter:image" content="https://animohan.me/images/me.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="preload" href="./images/me.png" as="image" type="image/png">
   <link rel="stylesheet" href="./css/styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-158669626-1');
+    
+    // Load analytics script after page load
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+      document.head.appendChild(script);
+    });
   </script>
 </head>
 
@@ -40,12 +51,12 @@
   </nav>
   <main id="main">
     <header class="hero">
-      <img class="hero-img" src="./images/me.png" alt="Ani Mohan - Product leader at Google Labs">
+      <img class="hero-img" src="./images/me.png" alt="Ani Mohan - Product leader at Google Labs" loading="eager" decoding="async" width="140" height="140">
       <h1>Building AI that gives everyone superpowers.</h1>
       <a class="cta" href="./notes.html" aria-label="Read my latest notes">Read my latest notes →</a>
     </header>
     <section class="intro" aria-label="About me">
-      <p>Hi, I'm <strong>Ani Mohan</strong>, product leader at Google Labs creating NotebookLM and agentic content systems. Previously founded GameSnacks (acquired by Google) and led consumer product for Claude.ai at Anthropic. I invest in and advise early AI startups. I chase ideas where technology amplifies human potential at mass consumer scale.</p>
+      <p>Hi, I'm <strong>Ani Mohan</strong>, product leader at Google Labs creating NotebookLM and agentic content systems. Previously founded GameSnacks (acquired by Google) and led consumer product for Claude.ai at Anthropic. I invest in and advise early stage startups. I chase ideas where technology amplifies human potential at mass consumer scale.</p>
     </section>
   </main>
 </body>

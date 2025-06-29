@@ -16,39 +16,85 @@
   <meta name="description" content="Notes and thoughts by Ani Mohan on AI, product development, and technology's impact on creativity">
   <meta name="author" content="Ani Mohan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="./images/favicon.png">
   <link rel="stylesheet" href="./css/styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-158669626-1');
+    
+    // Load analytics script after page load
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+      document.head.appendChild(script);
+    });
   </script>
 </head>
 
 <body>
-  <nav>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <nav role="navigation" aria-label="Main navigation">
     <a href="./index.html" class="logo">Ani Mohan</a>
     <ul class="nav-links">
-      <li><a href="./notes.html" class="active">Notes</a></li>
+      <li><a href="./notes.html" class="active" aria-current="page">Notes</a></li>
     </ul>
   </nav>
-  <h1>
-    My notes
-  </h1>
-  <p>
-<a href="./writings/upcoming-software-explosion.html">The upcoming software explosion</a>
-    <br><br>
-    <a href="./writings/human-intelligence-abundant.html">When human intelligence becomes abundant</a>
-    <br><br>
-    <a href="./writings/how-clubhouse-evolved-from-gaming.html">How Clubhouse evolved from gaming</a>
-    <br><br>
-    <a href="./writings/team-market-product.html">Team > market > product</a>
-    <br><br>
-    <a href="./writings/list-of-dialectics.html">A list of dialectics</a>
-  </p>
+  <main id="main">
+    <header class="notes-header">
+      <h1 class="title">My notes</h1>
+      <p class="notes-subtitle">Thoughts on building AI that amplifies human potential</p>
+    </header>
+    <section class="notes-grid" aria-label="List of notes">
+      <article class="note-card">
+        <a href="./writings/upcoming-software-explosion.html" class="note-link">
+          <h2 class="note-title">The upcoming software explosion</h2>
+          <p class="note-excerpt">What happens when writing code becomes as accessible to everyone as taking photos?</p>
+          <time class="note-date" datetime="2023-05-09">May 9, 2023</time>
+        </a>
+      </article>
+      
+      <article class="note-card">
+        <a href="./writings/human-intelligence-abundant.html" class="note-link">
+          <h2 class="note-title">When human intelligence becomes abundant</h2>
+          <p class="note-excerpt">Reframing AI as amplifying rather than replacing human capabilities.</p>
+          <time class="note-date" datetime="2023-03-15">Mar 15, 2023</time>
+        </a>
+      </article>
+      
+      <article class="note-card">
+        <a href="./writings/how-clubhouse-evolved-from-gaming.html" class="note-link">
+          <h2 class="note-title">How Clubhouse evolved from gaming</h2>
+          <p class="note-excerpt">The unexpected journey from gaming mechanics to social audio.</p>
+          <time class="note-date" datetime="2021-02-20">Feb 20, 2021</time>
+        </a>
+      </article>
+      
+      <article class="note-card">
+        <a href="./writings/team-market-product.html" class="note-link">
+          <h2 class="note-title">Team > market > product</h2>
+          <p class="note-excerpt">Why the hierarchy of startup success factors matters more than you think.</p>
+          <time class="note-date" datetime="2020-11-10">Nov 10, 2020</time>
+        </a>
+      </article>
+      
+      <article class="note-card">
+        <a href="./writings/list-of-dialectics.html" class="note-link">
+          <h2 class="note-title">A list of dialectics</h2>
+          <p class="note-excerpt">Exploring the tensions and paradoxes in product development and life.</p>
+          <time class="note-date" datetime="2020-08-05">Aug 5, 2020</time>
+        </a>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>

@@ -9,16 +9,27 @@
         <meta name="description" content="Five days at Sundance">
         <meta name="author" content="Ani Mohan">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <link rel="stylesheet" href="../css/styles.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-158669626-1');
+        
+        // Load analytics script after page load
+        window.addEventListener('load', function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+          document.head.appendChild(script);
+        });
         </script>   
     </head>
     <body>
@@ -31,11 +42,13 @@
             </ul>
         </nav>
         <main id="main">
-        <h1 class="title">
-            Five days at Sundance
-        </h1>
-        <p class="body-text" id="writing-body-text-medium-title">            
-            I spent five days in Park City, Utah at the <a href="https://www.sundance.org/" target="_blank">2020 Sundance Film Festival.</a>
+        <article class="note-article">
+            <header class="note-header">
+                <h1 class="note-title">Five days at Sundance</h1>
+                <time class="note-meta" datetime="2020-01-25">January 2020</time>
+            </header>
+            <div class="note-content">
+                <p>I spent five days in Park City, Utah at the <a href="https://www.sundance.org/" target="_blank">2020 Sundance Film Festival.</a></p>
             <br><br>
             I don’t work in the film industry -- I’m a founder of a gaming startup in San Francisco. But, I love films and creative communities. My friend told me Sundance provides both in spades, so I decided I had to go.
             <br><br>
@@ -49,11 +62,11 @@
             <br><br>
             As soon as I arrived I was struck by how gorgeous it is:
             <br><br>
-            <img src="./writings-images/five-days-at-sundance/park_city_1.jpg" class="my-images-preview" />
+            <img src="./writings-images/five-days-at-sundance/park_city_1.jpg" class="my-images-preview" loading="lazy" decoding="async" />
             <br><br>
-            <img src="./writings-images/five-days-at-sundance/park_city_2.jpg" class="my-images-preview" />
+            <img src="./writings-images/five-days-at-sundance/park_city_2.jpg" class="my-images-preview" loading="lazy" decoding="async" />
             <br><br>
-            <img src="./writings-images/five-days-at-sundance/park_city_3.jpg" class="my-images-preview" />
+            <img src="./writings-images/five-days-at-sundance/park_city_3.jpg" class="my-images-preview" loading="lazy" decoding="async" />
             <br><br>
             Park City is a winter wonderland. It feels otherworldly, like films.
             <br><br>
@@ -125,7 +138,8 @@
             <b>Nine Days</b>: 5 stars. My favorite Sundance film. The premise is simple, yet profound: a world where once you die, you get to decide who’s born next. The cinematography, acting, and score are brilliant. 
             <br><br>
             <b>Wendy</b>: 2 stars. Retelling of Peter Pan from Wendy’s perspective. Slow and serious, ironic for a film about childhood.
-        </p>
+            </div>
+        </article>
         </main>
     </body>
 </html>

@@ -16,15 +16,27 @@
     content="What happens when writing code becomes as accessible to everyone as taking photos?" />
   <meta name="twitter:image" content="https://animohan.me/images/me.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../css/styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-158669626-1');
+    
+    // Load analytics script after page load
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+      document.head.appendChild(script);
+    });
   </script>
 </head>
 
@@ -35,11 +47,13 @@
       <li><a href="../notes.html">Notes</a></li>
     </ul>
   </nav>
-  <h1>
-    The upcoming software explosion
-  </h1>
-
-  <p><i>May 9, 2023</i></p>
+  <main id="main">
+    <article class="note-article">
+      <header class="note-header">
+        <h1 class="note-title">The upcoming software explosion</h1>
+        <time class="note-meta" datetime="2023-05-09">May 9, 2023</time>
+      </header>
+      <div class="note-content">
   <p>Creating software today is slow, expensive, and difficult. Only a limited number of people possess the skills to do
     so. As a result <a target="_blank" rel="noopener noreferrer nofollow"
       href="https://skventures.substack.com/p/societys-technical-debt-and-softwares">there’s an undersupply of useful
@@ -62,6 +76,9 @@
   <p>What will the software creation tools of the future look like? What new categories of apps will emerge once
     there are over a billion developers? Let me know via <a target="_blank" rel="noopener noreferrer nofollow"
       href="https://twitter.com/ani_c_mohan">Twitter</a>.</p>
+      </div>
+    </article>
+  </main>
 
 </body>
 

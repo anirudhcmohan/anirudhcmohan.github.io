@@ -12,15 +12,27 @@
     content="How Clubhouse borrowed proven concepts from gaming and through intentional product design repackaged it for broader audiences.">
   <meta name="author" content="Ani Mohan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../css/styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-158669626-1');
+    
+    // Load analytics script after page load
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+      document.head.appendChild(script);
+    });
   </script>
 </head>
 
@@ -33,11 +45,12 @@
     </ul>
   </nav>
   <main id="main">
-  <h1>
-    How Clubhouse evolved from gaming
-  </h1>
-
-  <p><i>Feb 12, 2021</i></p>
+    <article class="note-article">
+      <header class="note-header">
+        <h1 class="note-title">How Clubhouse evolved from gaming</h1>
+        <time class="note-meta" datetime="2021-02-12">Feb 12, 2021</time>
+      </header>
+      <div class="note-content">
   <p>Clubhouse has taken Silicon Valley by storm over the past year and is gaining steam in other countries and
     communities. To many, it feels unlike anything else on the internet: an intimate place to meet, listen, and talk to
     friends and strangers via voice. I too have become obsessed, especially over the past few weeks.</p>
@@ -139,9 +152,10 @@
     audio room afterwards and have a meaningful conversation based on what you learned from the director.</p>
   <p>To me, this is the most exciting promise of Clubhouse: a platform for anyone with an internet connection to have
     live conversations based on shared interests, regardless of nationality, income, or literacy.</p>
-  <p>What do you think? Let me on know on <a href="https://twitter.com/ani_c_mohan">Twitter</a>. Or, find me on
-    Clubhouse.</p>
-
+        <p>What do you think? Let me on know on <a href="https://twitter.com/ani_c_mohan">Twitter</a>. Or, find me on
+          Clubhouse.</p>
+      </div>
+    </article>
   </main>
 </body>
 

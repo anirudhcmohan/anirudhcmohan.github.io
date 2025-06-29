@@ -9,16 +9,27 @@
         <meta name="description" content="Making posters">
         <meta name="author" content="Ani Mohan">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+        <link rel="dns-prefetch" href="https://www.google-analytics.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
         <link rel="icon" type="image/png" href="../images/favicon.png">
         <link rel="stylesheet" href="../css/styles.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-158669626-1');
+        
+        // Load analytics script after page load
+        window.addEventListener('load', function() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+          document.head.appendChild(script);
+        });
         </script>    
     </head>
     <body>
@@ -31,10 +42,13 @@
             </ul>
         </nav>
         <main id="main">
-        <h1 class="title">
-            Making posters
-        </h1>
-        <p class="body-text" id="writing-body-text-short-title">            
+        <article class="note-article">
+            <header class="note-header">
+                <h1 class="note-title">Making posters</h1>
+                <time class="note-meta" datetime="2020-03-15">March 2020</time>
+            </header>
+            <div class="note-content">
+                <p>            
             I’ve started learning graphic design by making posters for my room. It’s a low stakes project — I’m making posters for my own viewing pleasure. At the same time, I’ve got a bit of fire under me to make progress. I don’t like staring at my room’s blank walls.
             <br><br>
             Here I’ll explain my process for making my first poster, starting from scratch with near-zero graphic design experience and ending with a mounted poster on my wall.
@@ -57,11 +71,11 @@
             <br><br>
             Here are some images that stood out that made it onto my mood board:
             <br><br>
-            <img src="./writings-images/making-posters/mood-board-1.jpg" class="my-images-preview" />
+            <img src="./writings-images/making-posters/mood-board-1.jpg" class="my-images-preview" loading="lazy" decoding="async" />
             <br><br>
-            <img src="./writings-images/making-posters/mood-board-2.jpg" class="my-images-preview" />
+            <img src="./writings-images/making-posters/mood-board-2.jpg" class="my-images-preview" loading="lazy" decoding="async" />
             <br><br>
-            <img src="./writings-images/making-posters/mood-board-3.jpg" class="my-images-preview" />
+            <img src="./writings-images/making-posters/mood-board-3.jpg" class="my-images-preview" loading="lazy" decoding="async" />
             <b class="writing-caption">This last image in particular heavily influenced Pale Blue Dot. Also, I’m not sure why each of these involves Pluto.</b>
             <br><br>
             Armed with inspiration, I move on to creating the poster.
@@ -88,7 +102,7 @@
             <br><br>
             Following many iterations, I ended up with this:
             <br><br>
-            <img src="./writings-images/making-posters/poster_pale_blue_dot.png" class="my-images-preview" />                
+            <img src="./writings-images/making-posters/poster_pale_blue_dot.png" class="my-images-preview" loading="lazy" decoding="async" />                
             <br><br>
             <b class="writing-section-lead">Print the poster</b>
             <br><br>
@@ -100,7 +114,7 @@
             <br><br>
             Here’s the printed poster mounted on my wall:
             <br><br>
-            <img src="./writings-images/making-posters/mounted_poster.png" class="my-images-preview" />
+            <img src="./writings-images/making-posters/mounted_poster.png" class="my-images-preview" loading="lazy" decoding="async" />
             <br><br>
             I was surprised there wasn’t a simple and affordable online service for poster printing. I’d love a service that’d allow me to upload a PDF, specify size and print material, and receive a custom printed poster in the mail within 2 days.  
             <br><br>
@@ -112,7 +126,8 @@
             <br><br>
             If you have any thoughts, comments, or ideas based on anything I shared, please 
             reach out via <a target="_blank" href="https://twitter.com/ani_c_mohan">Twitter</a> and let’s discuss!
-        </p>
+            </div>
+        </article>
         </main>
     </body>
 </html>

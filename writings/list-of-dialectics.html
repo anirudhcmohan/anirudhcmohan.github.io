@@ -10,16 +10,28 @@
   <meta name="description" content="A list of dialectics">
   <meta name="author" content="Ani Mohan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1">  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-158669626-1');
+    
+    // Load analytics script after page load
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+      document.head.appendChild(script);
+    });
   </script>
 </head>
 
@@ -32,10 +44,12 @@
     </ul>
   </nav>
   <main id="main">
-  <h1>
-    A list of dialectics
-  </h1>
-  <p><i>Nov 26, 2020</i></p>
+    <article class="note-article">
+      <header class="note-header">
+        <h1 class="note-title">A list of dialectics</h1>
+        <time class="note-meta" datetime="2020-11-26">Nov 26, 2020</time>
+      </header>
+      <div class="note-content">
   <p><i>"The test of a first-rate intelligence is the ability to hold two opposing ideas in mind at the same time and
       still retain the ability to function."</i> - F. Scott Fitzgerald</p>
   <p>Simple rules of thumb are memorable but rarely drive good decisions in a complex world. Instead I prefer
@@ -82,9 +96,10 @@
     it with others? We're social animals, hardwired to crave connection and distinguished by our ability to cooperate
     with others. But, nobody else can read your mind or feel your emotions, try as they might. Making sense of it all is
     something you have to do for yourself in your own time.</p>
-  <p>If any of these resonate with you or you have suggestions on others to include, please let me know via <a
-      target="_blank" href="https://twitter.com/ani_c_mohan">Twitter</a>.</p>
-
+        <p>If any of these resonate with you or you have suggestions on others to include, please let me know via <a
+          target="_blank" href="https://twitter.com/ani_c_mohan">Twitter</a>.</p>
+      </div>
+    </article>
   </main>
 </body>
 

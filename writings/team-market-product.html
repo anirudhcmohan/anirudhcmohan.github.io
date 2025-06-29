@@ -10,15 +10,27 @@
   <meta name="description" content="Team > market > product in early stage startups">
   <meta name="author" content="Ani Mohan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="icon" type="image/png" href="../images/favicon.png">
   <link rel="stylesheet" href="../css/styles.css">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158669626-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-158669626-1');
+    
+    // Load analytics script after page load
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158669626-1';
+      document.head.appendChild(script);
+    });
   </script>
 </head>
 
@@ -31,11 +43,12 @@
     </ul>
   </nav>
   <main id="main">
-  <h1>
-    Team > market > product
-  </h1>
-
-  <p><i>Dec 22, 2020</i></p>
+    <article class="note-article">
+      <header class="note-header">
+        <h1 class="note-title">Team > market > product</h1>
+        <time class="note-meta" datetime="2020-12-22">Dec 22, 2020</time>
+      </header>
+      <div class="note-content">
   <p>When I advise or invest in early stage startups, I first consider the team, then the market, and only after that
     the product </p>
   <h2>You often pivot the product</h2>
@@ -123,9 +136,10 @@
     the founders start the company? What criteria do they use to make tough decisions? How do they decide who to hire?
     How open are they with themselves and others about what they don't know? How do they learn?</p>
   <p>If you get the team right, given enough time, everything else will follow.</p>
-  <p>Does this match your experience? Or, do you think about it differently? Feel free to let me know either way via <a
-      target="_blank" href="https://twitter.com/ani_c_mohan">Twitter</a>.</p>
-
+        <p>Does this match your experience? Or, do you think about it differently? Feel free to let me know either way via <a
+          target="_blank" href="https://twitter.com/ani_c_mohan">Twitter</a>.</p>
+      </div>
+    </article>
   </main>
 </body>
 
